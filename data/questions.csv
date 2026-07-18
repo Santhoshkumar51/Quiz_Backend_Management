@@ -1,0 +1,63 @@
+question_text,category,choice_1,choice_2,choice_3,choice_4,correct_index
+What is the output data type of the len() function in Python?,Python,String,Integer,Float,Boolean,1
+Which keyword is used to define a function in Python?,Python,func,def,function,define,1
+What does the acronym PEP stand for in Python?,Python,Python Enhancement Proposal,Python Execution Process,Python Error Protocol,Python External Package,0
+Which data structure in Python does not allow duplicate values?,Python,List,Tuple,Set,Dictionary,2
+What is the correct way to create a virtual environment in Python?,Python,python -m venv env,python create venv,pip install venv,python venv new,0
+Which of these is a mutable data type in Python?,Python,Tuple,String,List,Integer,2
+What does the 'self' keyword refer to in a Python class method?,Python,The class itself,The current instance of the class,A static variable,A global variable,1
+Which built-in function is used to get the type of a variable?,Python,typeof(),type(),gettype(),vartype(),1
+What is a lambda function in Python?,Python,A named function,An anonymous inline function,A class method,A loop construct,1
+Which module is commonly used for handling exceptions in Python?,Python,try-except,error-handle,exception-module,catch-block,0
+What does IQR stand for in statistics?,Statistics,Inter Quartile Range,Integer Query Range,Index Query Result,Inverse Quantile Rate,0
+Which measure of central tendency is most affected by outliers?,Statistics,Median,Mode,Mean,Range,2
+What does a p-value less than 0.05 typically indicate?,Statistics,Strong evidence for the null hypothesis,Statistical significance against the null hypothesis,No relationship exists,The sample size is too small,1
+What is the standard deviation a measure of?,Statistics,Central tendency,Data spread around the mean,Data skewness,Sample size,1
+Which distribution is symmetric and bell-shaped?,Statistics,Poisson distribution,Binomial distribution,Normal distribution,Exponential distribution,2
+What does correlation of 0 between two variables imply?,Statistics,A strong positive relationship,A strong negative relationship,No linear relationship,A perfect relationship,2
+"In hypothesis testing, what is a Type I error?",Statistics,Failing to reject a false null hypothesis,Rejecting a true null hypothesis,Accepting the alternative hypothesis correctly,Having a small sample size,1
+What does the term 'variance' measure?,Statistics,Average of the data,Spread of data points from the mean squared,The middle value,The most frequent value,1
+Which sampling method gives every member an equal chance of selection?,Statistics,Convenience sampling,Random sampling,Judgmental sampling,Snowball sampling,1
+What is the Central Limit Theorem primarily about?,Statistics,Population size,Sampling distribution of the mean approaching normal,Data being always normal,Standard deviation being zero,1
+Which SQL clause is used to filter rows before grouping?,SQL,HAVING,WHERE,GROUP BY,ORDER BY,1
+Which SQL clause is used to filter groups after aggregation?,SQL,WHERE,HAVING,FILTER,LIMIT,1
+What does the SQL JOIN type INNER JOIN return?,SQL,All rows from both tables,Only matching rows from both tables,All rows from the left table,All rows from the right table,1
+Which SQL keyword removes duplicate rows from a result set?,SQL,UNIQUE,DISTINCT,REMOVE,FILTER,1
+What is a primary key in a relational database?,SQL,A column that can contain duplicates,A column that uniquely identifies each row,A column used only for sorting,A column that stores foreign data,1
+Which SQL command is used to modify existing records in a table?,SQL,UPDATE,ALTER,MODIFY,CHANGE,0
+What does a FOREIGN KEY constraint enforce?,SQL,Uniqueness within a table,A link between two tables,Sorting order,Column data type,1
+Which SQL function returns the number of rows in a result set?,SQL,SUM(),TOTAL(),COUNT(),NUMBER(),2
+What does the SQL LIKE operator do?,SQL,Compares two tables,Matches a pattern in a string,Joins two columns,Sorts numeric data,1
+Which of these is used to create a new table in SQL?,SQL,CREATE TABLE,NEW TABLE,MAKE TABLE,ADD TABLE,0
+Which Pandas function is used to read a CSV file?,Pandas/NumPy,pd.load_csv(),pd.read_csv(),pd.open_csv(),pd.get_csv(),1
+"What does the NumPy function np.zeros((3,3)) create?",Pandas/NumPy,A 3x3 matrix of ones,A 3x3 matrix of zeros,A 1D array of 3 zeros,A random 3x3 matrix,1
+Which Pandas method is used to check for missing values?,Pandas/NumPy,isnull(),checknull(),missing(),na_check(),0
+What does the shape attribute of a NumPy array return?,Pandas/NumPy,The data type,The dimensions of the array,The sum of elements,The memory size,1
+Which Pandas function combines two dataframes based on a common column?,Pandas/NumPy,concat(),merge(),append(),join_all(),1
+What is the default axis for the Pandas sum() function?,Pandas/NumPy,axis=1,axis=None,axis=0,axis=2,2
+Which NumPy function generates evenly spaced numbers over an interval?,Pandas/NumPy,np.arange(),np.linspace(),np.range(),np.evenly(),1
+What does df.groupby() in Pandas primarily do?,Pandas/NumPy,Sorts the dataframe,Splits data into groups based on a column,Removes duplicate rows,Merges two dataframes,1
+Which Pandas attribute gives the column names of a dataframe?,Pandas/NumPy,df.index,df.columns,df.names,df.headers,1
+"What does np.array([1,2,3]).dtype return by default for integers?",Pandas/NumPy,float64,int64,object,int32,1
+What is overfitting in machine learning?,Machine Learning,Model performs well on both training and test data,Model performs well on training data but poorly on new data,Model fails to learn any pattern,Model has too few parameters,1
+Which algorithm is commonly used for classification problems?,Machine Learning,Linear Regression,Logistic Regression,K-Means,PCA,1
+What does the term 'feature scaling' refer to?,Machine Learning,Increasing the number of features,Normalizing or standardizing feature values,Removing features from a dataset,Adding polynomial features,1
+Which metric is commonly used to evaluate classification models?,Machine Learning,Mean Squared Error,R-squared,Accuracy,RMSE,2
+What is the purpose of a train-test split in machine learning?,Machine Learning,To increase dataset size,To evaluate model performance on unseen data,To remove outliers,To normalize the data,1
+Which technique is used to reduce overfitting in decision trees?,Machine Learning,Increasing tree depth,Pruning,Adding more features,Removing the test set,1
+What does K-Means clustering aim to do?,Machine Learning,Predict continuous values,Classify labeled data,Group similar data points into clusters,Reduce feature dimensions,2
+Which of these is a supervised learning algorithm?,Machine Learning,K-Means Clustering,Linear Regression,PCA,DBSCAN,1
+What is the role of the learning rate in gradient descent?,Machine Learning,Determines the number of features,Controls the size of steps taken to minimize loss,Sets the number of training epochs,Defines the model architecture,1
+"What is the output of print(type([1,2,3]) == list) in Python?",Python,False,True,Error,None,1
+What will [x**2 for x in range(4)] evaluate to?,Python,"[0, 1, 4, 9]","[1, 4, 9, 16]","[0, 2, 4, 6]",Error,0
+"Given a list with a mutable default argument in a function definition, what common bug can occur across multiple calls?",Python,The function runs slower each call,The default value persists and accumulates across calls,Python raises a TypeError,Nothing unusual happens,1
+Two features in a dataset have a correlation of 0.98. What issue does this most likely cause in a linear regression model?,Statistics,Underfitting,Multicollinearity,Data leakage,Class imbalance,1
+A dataset has mean = 50 and median = 80. What does this suggest about the distribution?,Statistics,It is perfectly normal,It is left-skewed (negatively skewed),It has zero variance,It is right-skewed (positively skewed),1
+You run an A/B test and get a p-value of 0.5. What is the correct interpretation?,Statistics,The treatment definitely has no effect,There is insufficient evidence to reject the null hypothesis,The null hypothesis is proven true,The sample size was too large,1
+"Given tables Orders and Customers, which JOIN would you use to include all customers even if they have no orders?",SQL,INNER JOIN,LEFT JOIN,RIGHT JOIN,CROSS JOIN,1
+You need to find the second-highest salary in an Employees table. Which approach works correctly?,SQL,Use MAX(salary) twice,Use LIMIT 2 OFFSET 1 on salary sorted descending with DISTINCT,Use MIN(salary),Use COUNT(salary),1
+A query with a GROUP BY and a WHERE clause filtering on an aggregate fails. What is the fix?,SQL,Remove the WHERE clause entirely,Replace WHERE with HAVING for the aggregate condition,Move GROUP BY before SELECT,Use ORDER BY instead,1
+"Given df with a 'salary' column containing NaN values, what does df['salary'].fillna(df['salary'].mean()) do?",Pandas/NumPy,Drops rows with NaN,Replaces NaN values with the column's mean,Replaces all values with the mean,Raises an error since NaN can't be filled,1
+What is the key difference between df.loc[] and df.iloc[]?,Pandas/NumPy,They are identical,loc uses label-based indexing; iloc uses integer position-based indexing,loc is faster than iloc,iloc only works on Series,1
+A model achieves 98% training accuracy but 60% test accuracy. What is the most likely problem and fix?,Machine Learning,Underfitting; add more features,Overfitting; use regularization or more training data,Data leakage; nothing to fix,The model needs more epochs only,1
+"You have a highly imbalanced binary classification dataset (95% class A, 5% class B). Why is accuracy a poor metric here?",Machine Learning,Accuracy cannot be computed for binary classes,A model predicting only class A would still score 95% accuracy while being useless,Accuracy only works for regression,Accuracy requires balanced classes to be calculated at all,1
