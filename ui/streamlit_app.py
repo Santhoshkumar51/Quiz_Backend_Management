@@ -219,7 +219,7 @@ if mode == "🎯 Take a Quiz":
         """
         <div class="hero">
             <h1>Take a Data Science Quiz</h1>
-            <p>No sign-in needed — pick a topic and test yourself.</p>
+            <p>Pick a topic and test yourself.</p>
         </div>
         """,
         unsafe_allow_html=True,
