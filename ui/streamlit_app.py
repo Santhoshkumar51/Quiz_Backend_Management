@@ -25,6 +25,8 @@ try:
 except Exception:
     API_BASE_URL = "http://localhost:8000"
 
+API_BASE_URL = API_BASE_URL.rstrip("/")  # avoid accidental double-slash URLs like ".../com//questions"
+
 st.set_page_config(page_title="DataQuiz", page_icon="◆", layout="wide")
 
 CATEGORY_STYLE = {
@@ -127,6 +129,19 @@ def api_get(path, params=None):
         return None
 
 
+def _show_api_error(e, response=None):
+    """Show the backend's actual detail message (e.g. the 4-choice-limit error) instead of a generic exception."""
+    if response is not None:
+        try:
+            detail = response.json().get("detail")
+            if detail:
+                st.error(detail)
+                return
+        except Exception:
+            pass
+    st.error(f"Request failed: {e}")
+
+
 def api_post(path, payload, auth=False):
     try:
         r = requests.post(
@@ -140,7 +155,7 @@ def api_post(path, payload, auth=False):
         r.raise_for_status()
         return r.json()
     except requests.exceptions.RequestException as e:
-        st.error(f"Request failed: {e}")
+        _show_api_error(e, response=getattr(e, "response", None))
         return None
 
 
